@@ -1,0 +1,47 @@
+.speed__settings,
+.difficulties__settings {
+    position: relative;
+    z-index: 11;
+    color: #fff;
+    display: none;
+    max-width: 138px;
+}
+
+.speed__settings,
+.difficulties__settings {
+    margin-top: 135px;
+}
+
+.header__speed,
+.header__difficulties {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+}
+
+.active {
+    display: block;
+    max-height: 100px;
+    position: absolute;
+}
+
+.speed__item,
+.difficulties__item {
+    color: white;
+    background-color: rgb(34, 33, 33);
+    padding: 8px 8px 8px 54px;
+    box-shadow: 3px 3px 3px gray;
+    border-radius: 10px;
+    margin-left: 40px;
+    font-size: 15px;
+    letter-spacing: 1.2px;
+    cursor: pointer;
+    border: 1px solid gray;
+    text-align: end;
+}
+
+.difficulties__item {
+    padding: 8px;
+    max-width: 154px;
+}

@@ -1,0 +1,44 @@
+.main__lives,
+.main__scores {
+    font-size: 17px;
+    letter-spacing: 1.2px;
+    position: absolute;
+    right: 0;
+    top: 60px;
+    margin: 15px;
+    color: rgb(26, 25, 25);
+    border: 1px solid rgba(26, 25, 25, 0.5);
+    border-radius: 20px;
+    padding: 8px;
+    overflow: hidden;
+    z-index: 2000;
+}
+
+.lives__title {
+    display: flex;
+}
+
+.lives__numbers,
+.scores__numbers {
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    margin-right: 20px;
+    margin-top: 5px;
+}
+
+.lives,
+.scores {
+    display: none;
+    margin-top: 20px;
+}
+
+.main__scores {
+    margin-top: 100px;
+    margin-right: 40px;
+    font-size: 17px;
+}
+
+.scores__numbers {
+    margin-left: 25px;
+}

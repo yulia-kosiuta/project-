@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Game</title>
+</head>
+
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="header">
+                <div class="container">
+                    <div class="header__body">
+                        <div class="header__speed">
+                            <div class="header__item speed">Швидкість</div>
+                            <div class="speed__settings">
+                                <div class="speed__item"> <span id="marker"></span> 0.5x</div>
+                                <div class="speed__item"><span id="marker"></span> 1x</div>
+                                <div class="speed__item"><span id="marker"></span> 2x</div>
+                            </div>
+                        </div>
+                        <div class="header__difficulties">
+                            <div class="header__item difficulties">Складність</div>
+                            <div class="difficulties__settings">
+                                <div class="difficulties__item one-target"> Одна мішень</div>
+                                <div class="difficulties__item two-targets"> Дві мішені</div>
+                                <div class="difficulties__item disappearing-target"> Зникаючі
+                                    мішені</div>
+                            </div>
+                        </div>
+                        <div class="header__item header__settings">Налаштування</div>
+                        <div class="header__item settings__rules">Правила гри</div>
+                        <div class="header__sound-on"> <img src="img/on.png" class="image-on" alt="sound"></div>
+                        <div class="header__sound-off"> <img src="img/off.webp" class="image-off" alt="sound"></div>
+                    </div>
+                </div>
+            </div>
+    </header>
+    <main>
+        <div class="main__wrapper">
+            <div class="main__container">
+                <div class="main">
+                    <div class="container">
+                        <div class="main__body">
+                            <div class="main__bat">
+                                <img src="img/bat.webp" class="bat-image" alt="Moving target">
+                            </div>
+                            <div class="main__duck">
+                                <img src="img/duck.webp" class="duck-image" alt="Moving target">
+                            </div>
+                            <div class="main__reticle">
+                                <img src="img/reticle.webp" alt="Reticle">
+                            </div>
+                            <audio src="sounds/sound.mp3" class="sound-hit"></audio>
+                            <audio src="sounds/sound-2.mp3" class="sound-loss"></audio>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main__lives lives">
+                <div class="lives__title">Кількість життів <img class="header__icon" src="img/heart.webp" alt="Heart">
+                </div>
+                <p class="lives__numbers">20</p>
+            </div>
+            <div class="main__scores scores">
+                <div class="scores__title">Кількість балів:
+                </div>
+                <p class="scores__numbers">0</p>
+            </div>
+        </div>
+        <div class="menu">
+            <div class="menu__container">
+                <div class="menu__title">РУХОМА МІШЕНЬ
+                </div>
+                <button class="menu__button">ПОЧАТИ ГРУ</button>
+                <div class="menu__settings-rules">
+                    <div class="menu__rules">Правила гри</div>
+                    <div class="menu__settings">Налаштування</div>
+                </div>
+            </div>
+        </div>
+        <div class="rules">
+            <div class="back" id="back-rules">Назад </div>
+            <img src="img/close.webp" class="close" alt="Close">
+            <img src="img/close.webp" class="close-one" alt="Close">
+            <p class="rules__title">ПРАВИЛА ГРИ</p>
+            <p class="rules__text">Суть гри полягає в як найбільшій кількості
+                попадань в мішень. За кожне влучне попадання гравцю
+                нараховується 10 балів. Гравець може змінювати швидкість руху мішені, при 0.5х -
+                кількість балів
+                буде рівна 5, при 2х - буде рівна 20. Також гравець може змінювати тип мішені і рівень
+                складності. Всього у гравця 20 життів.
+            </p>
+        </div>
+        <div class="settings settings-first">
+            <div class="back" id="back-settings">Назад </div>
+            <img src="img/close.webp" class="close close-settings" alt="Close">
+            <img src="img/close.webp" class="close-one" alt="Close">
+            <p class="settings__title">НАЛАШТУВАННЯ </p>
+            <div class="settings__music">
+                <div class="settings__music-body"> Музика <img class="settings__icon" src="img/music-icon.webp"
+                        alt="Music">
+                </div>
+                <div class="settings__music-settings"><audio src="sounds/music.mp3" class="music"></audio>
+                    <input type="range" id="volumeSlider" min="0" max="1" step="0.05" value="0.5">
+                    <input type="radio" name="music" class="music-included" value="included" checked> Вкл
+                    <input type="radio" name="music" class="music-excluded" value="excluded"> Викл
+                </div>
+            </div>
+            <div class="settings__sound">Звук <img class="settings__icon" src="img/sound-icon.png" alt="Sound">
+            </div>
+            <input type="radio" name="sound" value="included" class="sound-included" checked> Вкл
+            <input type="radio" name="sound" value="excluded" class="sound-excluded"> Викл
+            <div class="seettings__exit">Вийти з гри <img class="settings__icon" src="img/exit-icon.webp" alt="Exit">
+            </div>
+        </div>
+        <div class="loss">
+            <div class="loss__title">Закінчились життя! :(</div>
+            <button class="loss__button button-restart"> ГРАТИ ЗНОВУ</button>
+            <div class="seettings__exit">Вийти з гри <img class="settings__icon" src="img/exit-icon.webp" alt="Exit">
+            </div>
+        </div>
+        <div class="additionally">
+            <button class="additionally__button">
+                ГРАТИ
+            </button>
+        </div>
+    </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

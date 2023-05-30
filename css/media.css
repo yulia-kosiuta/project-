@@ -1,0 +1,146 @@
+@media (max-width:1270px) {
+    .header__item {
+        margin-left: 0;
+        margin-right: 15px;
+    }
+
+    .header__item:nth-child(4) {
+        margin-right: 40px;
+    }
+}
+
+@media (max-width:1000px) {
+    .menu__container {
+        right: 20%;
+    }
+
+    .main__reticle {
+        display: none;
+    }
+
+    .header__item:nth-child(4) {
+        margin-right: 35px;
+    }
+
+    .settings,
+    .rules {
+        left: 28%;
+    }
+
+    .loss {
+        left: 33%;
+    }
+}
+
+@media (max-width:750px) {
+    .menu__container {
+        right: 35%;
+    }
+
+    .settings {
+        left: 28%;
+        padding: 50px 30px;
+    }
+
+    .rules {
+        left: 20%;
+        padding: 10px 40px;
+    }
+
+    .loss {
+        left: 27%;
+    }
+}
+
+@media (max-width:600px) {
+    .settings {
+        left: 23%;
+    }
+
+    .rules {
+        left: 10%;
+    }
+
+    .loss {
+        left: 21%;
+    }
+}
+
+@media (max-width:500px) {
+    .settings {
+        left: 21%;
+    }
+
+    .rules {
+        left: 8%;
+    }
+
+    .loss {
+        left: 16%;
+    }
+
+    .header__item {
+        font-size: 14px;
+        letter-spacing: 0;
+        margin-right: 5px;
+    }
+
+    .speed__settings,
+    .difficulties__settings {
+        max-width: 118px;
+        margin-right: 5px;
+    }
+
+    .difficulties__item,
+    .speed__item {
+        font-size: 13px;
+        letter-spacing: 0;
+    }
+
+    .speed__item:nth-child(1) {
+        padding-left: 28px;
+    }
+
+    .difficulties__item {
+        padding-left: 10px;
+    }
+}
+
+@media (max-width:400px) {
+    .menu__container {
+        right: 30%;
+    }
+
+    .settings {
+        left: 10%;
+    }
+
+    .menu__rules,
+    .menu__settings {
+        font-size: 13px;
+    }
+
+    .rules {
+        left: 1%;
+    }
+
+    .loss {
+        left: 8%;
+    }
+
+    .difficulties__item,
+    .speed__item {
+        font-size: 12px;
+    }
+
+    .header__item {
+        font-size: 12.5px;
+        margin-right: 3px;
+    }
+
+    .speed__settings,
+    .difficulties__settings {
+        max-width: 112px;
+        margin-bottom: 5px;
+    }
+}

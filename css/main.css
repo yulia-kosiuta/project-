@@ -1,0 +1,67 @@
+.main__wrapper {
+    width: 100%;
+    height: 91.1vh;
+    overflow: hidden;
+}
+
+.main__container {
+    width: 110%;
+    height: 110%;
+    background-image: url('../img/background.jpg');
+    background-size: cover;
+    background-position: 0 50%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.main__bat,
+.main__duck {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transition: all 1.9s ease-in-out;
+    cursor: pointer;
+}
+
+.bat-image {
+    width: 140px;
+    height: 90px;
+}
+
+.main__duck {
+    display: none;
+}
+
+.duck-image {
+    width: 100px;
+    height: 100px;
+}
+
+.main__reticle {
+    width: 35px;
+    height: 35px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    opacity: 0.7;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: all 0s;
+}
+
+.main__bat:hover~.main__reticle {
+    transform: translate(-50%, -50%) scale(1.5);
+}
+
+.main__duck:hover~.main__reticle {
+    transform: translate(-50%, -50%) scale(1.5);
+}

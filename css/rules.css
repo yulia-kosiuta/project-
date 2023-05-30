@@ -1,0 +1,9 @@
+.rules{
+    left: 36%;
+}
+
+.rules__text {
+    letter-spacing: 1px;
+    line-height: 20px;
+    padding: 40px;
+}

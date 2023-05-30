@@ -1,0 +1,54 @@
+.settings .close-one {
+    margin-top: -40px;
+}
+
+.settings {
+    position: absolute;
+    top: 30%;
+    left: 37%;
+}
+
+.settings__icon {
+    width: 17px;
+    height: 17px;
+    margin: 2px 0 0 6px;
+}
+
+.settings__music-body,
+.settings__sound,
+.seettings__exit {
+    display: flex;
+    justify-content: center;
+    letter-spacing: 1px;
+    line-height: 20px;
+    font-size: 18px;
+    margin: 20px;
+    font-weight: bold;
+}
+
+.seettings__exit {
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+
+.settings__title {
+    margin-bottom: 45px 0;
+}
+
+.seettings__exit {
+    cursor: pointer;
+}
+
+.settings-first {
+    padding: 50px 70px;
+}
+
+#back-settings {
+    margin-top: -30px;
+    margin-bottom: 20px;
+    margin-left: -25px;
+}
+
+.close-settings {
+    margin-top: -40px;
+}

@@ -1,0 +1,38 @@
+.loss__button,
+.additionally__button {
+    background-color: rgb(194, 66, 66);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 35px;
+    font-size: 18px;
+    box-shadow: 2px 2px 2px gray;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-top: 150px;
+}
+
+.loss {
+    padding: 30px 0;
+    width: 300px;
+    position: absolute;
+    top: 32%;
+    left: 39%;
+    display: none;
+}
+
+.additionally {
+    position: absolute;
+    top: 40%;
+    left: 42%;
+    background-color: rgb(187, 179, 68);
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 5px gray;
+    display: none;
+}
+
+.additionally__button {
+    margin: 0;
+    padding: 20px 40px;
+}

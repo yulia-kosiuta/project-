@@ -1,0 +1,56 @@
+.menu__container,
+.rules,
+.settings,
+.loss {
+    background-color: rgb(187, 179, 68);
+    max-width: 400px;
+    max-height: 500px;
+    border-radius: 11%;
+    border: 1px solid gray;
+    box-shadow: 3px 3px 5px gray;
+    position: relative;
+    z-index: 10;
+    text-align: center;
+}
+
+.rules,
+.menu {
+    position: absolute;
+    top: 25%;
+    left: 38%;
+}
+
+.rules__title,
+.settings__title,
+.loss__title {
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.close,
+.close-one {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 90%;
+    cursor: pointer;
+    margin-top: -20px;
+}
+
+.close-one {
+    display: none;
+}
+
+.settings,
+.rules {
+    display: none;
+    padding: 20px 45px;
+}
+
+.back {
+    text-align: start;
+    font-size: 20px;
+    margin-left: -20px;
+    cursor: pointer;
+}
